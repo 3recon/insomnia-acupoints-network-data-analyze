@@ -28,7 +28,7 @@
 3,Cui,2003,SP4,SP4,body,keep,표준 체침 경혈 코드
 4,Du,2007,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
 4,Du,2007,SP6,SP6,body,keep,표준 체침 경혈 코드
-4,Du,2007,1 inch above medial malleolus,,unknown,review_needed,수동 검토 필요
+4,Du,2007,1 inch above medial malleolus,,unknown,drop,특정 경혈로 식별 불가
 4,Du,2007,BL15,BL15,body,keep,표준 체침 경혈 코드
 4,Du,2007,BL20,BL20,body,keep,표준 체침 경혈 코드
 4,Du,2007,BL18,BL18,body,keep,표준 체침 경혈 코드
@@ -107,8 +107,8 @@
 16,Liu,2001,CV12,CV12,body,keep,표준 체침 경혈 코드
 16,Liu,2001,ST21,ST21,body,keep,표준 체침 경혈 코드
 17,Lu,1998,PC6(bilaterally),PC6,body,map,체침 경혈 코드 표준화
-18,Luo,2006,족태양방광경(BL),,unknown,review_needed,수동 검토 필요
-18,Luo,2006,독맥(GV)의 모든 경혈: BL1,,unknown,review_needed,수동 검토 필요
+18,Luo,2006,족태양방광경(BL),,unknown,drop,특정 경혈로 식별 불가
+18,Luo,2006,독맥(GV)의 모든 경혈: BL1,,unknown,drop,특정 경혈로 식별 불가
 18,Luo,2006,BL2,BL2,body,keep,표준 체침 경혈 코드
 18,Luo,2006,BL3,BL3,body,keep,표준 체침 경혈 코드
 18,Luo,2006,BL4,BL4,body,keep,표준 체침 경혈 코드
@@ -227,7 +227,7 @@
 22,Reza,2010,SP6,SP6,body,keep,표준 체침 경혈 코드
 22,Reza,2010,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
 23,Sok,2005,(Ear) Zhenjing,EAR_ZHENJING,ear,map,이침 경혈 표준화
-23,Sok,2005,Bailing,,unknown,review_needed,수동 검토 필요
+23,Sok,2005,Bailing,,unknown,drop,특정 경혈로 식별 불가
 24,Suen,2002,(Ear) Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
 24,Suen,2002,Heart,EAR_HEART,ear,map,이침 경혈 표준화
 24,Suen,2002,Kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화

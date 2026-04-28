@@ -42,9 +42,6 @@ DROP_VALUES = {
     "hands(unspecified)",
     "multiple acupoints(경혈 명시x)",
     "경혈 명시x",
-}
-
-REVIEW_VALUES = {
     "1 inch above medial malleolus",
     "bailing",
     "족태양방광경(bl)",
@@ -104,9 +101,6 @@ def normalize_acupoint(original: str) -> list[dict[str, str]]:
 
     if key in DROP_VALUES:
         return [log_item(value, "", "unknown", "drop", "특정 경혈로 식별 불가")]
-
-    if key in REVIEW_VALUES:
-        return [log_item(value, "", "unknown", "review_needed", "수동 검토 필요")]
 
     if key in EAR_MAPPING:
         return [log_item(value, EAR_MAPPING[key], "ear", "map", "이침 경혈 표준화")]
