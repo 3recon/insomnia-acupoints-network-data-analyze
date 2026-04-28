@@ -1,0 +1,592 @@
+﻿paper_no,first_author,year,original_acupoint,standard_acupoint,system,action,reason
+1,Chen,1999,GV20,GV20,body,keep,표준 체침 경혈 코드
+1,Chen,1999,GB20,GB20,body,keep,표준 체침 경혈 코드
+1,Chen,1999,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+1,Chen,1999,HT7,HT7,body,keep,표준 체침 경혈 코드
+1,Chen,1999,hands(unspecified),,unknown,drop,특정 경혈로 식별 불가
+2,Chen,2009,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+2,Chen,2009,GV24,GV24,body,keep,표준 체침 경혈 코드
+2,Chen,2009,GV20,GV20,body,keep,표준 체침 경혈 코드
+2,Chen,2009,EX-HN5,EX-HN5,body,keep,표준 체침 경혈 코드
+2,Chen,2009,HT7,HT7,body,keep,표준 체침 경혈 코드
+2,Chen,2009,(Ear) Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+2,Chen,2009,heart,EAR_HEART,ear,map,이침 경혈 표준화
+2,Chen,2009,lung,EAR_LUNG,ear,map,이침 경혈 표준화
+2,Chen,2009,spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+2,Chen,2009,kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+2,Chen,2009,liver,EAR_LIVER,ear,map,이침 경혈 표준화
+2,Chen,2009,endocrine,EAR_ENDOCRINE,ear,map,이침 경혈 표준화
+2,Chen,2009,sympathetic,EAR_SYMPATHETIC,ear,map,이침 경혈 표준화
+2,Chen,2009,cortical areas,EAR_CORTICAL_AREAS,ear,map,이침 경혈 표준화
+3,Cui,2003,GV20,GV20,body,keep,표준 체침 경혈 코드
+3,Cui,2003,GV24,GV24,body,keep,표준 체침 경혈 코드
+3,Cui,2003,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+3,Cui,2003,HT7,HT7,body,keep,표준 체침 경혈 코드
+3,Cui,2003,PC6,PC6,body,keep,표준 체침 경혈 코드
+3,Cui,2003,CV12,CV12,body,keep,표준 체침 경혈 코드
+3,Cui,2003,ST40,ST40,body,keep,표준 체침 경혈 코드
+3,Cui,2003,SP4,SP4,body,keep,표준 체침 경혈 코드
+4,Du,2007,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+4,Du,2007,SP6,SP6,body,keep,표준 체침 경혈 코드
+4,Du,2007,1 inch above medial malleolus,,unknown,drop,특정 경혈로 식별 불가
+4,Du,2007,BL15,BL15,body,keep,표준 체침 경혈 코드
+4,Du,2007,BL20,BL20,body,keep,표준 체침 경혈 코드
+4,Du,2007,BL18,BL18,body,keep,표준 체침 경혈 코드
+4,Du,2007,BL23,BL23,body,keep,표준 체침 경혈 코드
+4,Du,2007,KI3,KI3,body,keep,표준 체침 경혈 코드
+4,Du,2007,TE6,TE6,body,keep,표준 체침 경혈 코드
+4,Du,2007,LR2,LR2,body,keep,표준 체침 경혈 코드
+4,Du,2007,GB43,GB43,body,keep,표준 체침 경혈 코드
+5,Guo,2009,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+5,Guo,2009,HT7,HT7,body,keep,표준 체침 경혈 코드
+5,Guo,2009,SP6,SP6,body,keep,표준 체침 경혈 코드
+5,Guo,2009,CV4,CV4,body,keep,표준 체침 경혈 코드
+5,Guo,2009,BL15,BL15,body,keep,표준 체침 경혈 코드
+5,Guo,2009,BL20,BL20,body,keep,표준 체침 경혈 코드
+5,Guo,2009,BL23,BL23,body,keep,표준 체침 경혈 코드
+5,Guo,2009,KI3,KI3,body,keep,표준 체침 경혈 코드
+5,Guo,2009,BL21,BL21,body,keep,표준 체침 경혈 코드
+5,Guo,2009,ST36,ST36,body,keep,표준 체침 경혈 코드
+5,Guo,2009,BL18,BL18,body,keep,표준 체침 경혈 코드
+5,Guo,2009,LR3,LR3,body,keep,표준 체침 경혈 코드
+6,Hisghman,2006,(Ear) Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+6,Hisghman,2006,heart,EAR_HEART,ear,map,이침 경혈 표준화
+6,Hisghman,2006,kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+6,Hisghman,2006,liver,EAR_LIVER,ear,map,이침 경혈 표준화
+6,Hisghman,2006,spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+6,Hisghman,2006,occiput and subcortex,EAR_OCCIPUT,ear,split,합쳐진 이침 경혈 분리
+6,Hisghman,2006,occiput and subcortex,EAR_SUBCORTEX,ear,split,합쳐진 이침 경혈 분리
+7,Hwang,2007,multiple acupoints(경혈 명시X),,unknown,drop,특정 경혈로 식별 불가
+8,Jian,2005,BL15,BL15,body,keep,표준 체침 경혈 코드
+8,Jian,2005,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+8,Jian,2005,GV20,GV20,body,keep,표준 체침 경혈 코드
+8,Jian,2005,GV24,GV24,body,keep,표준 체침 경혈 코드
+8,Jian,2005,KI6,KI6,body,keep,표준 체침 경혈 코드
+8,Jian,2005,HT7,HT7,body,keep,표준 체침 경혈 코드
+8,Jian,2005,EX-HN5,EX-HN5,body,keep,표준 체침 경혈 코드
+9,Jin,2003,(Ear) Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+9,Jin,2003,Occiput,EAR_OCCIPUT,ear,map,이침 경혈 표준화
+9,Jin,2003,Subcortex,EAR_SUBCORTEX,ear,map,이침 경혈 표준화
+9,Jin,2003,Liver,EAR_LIVER,ear,map,이침 경혈 표준화
+9,Jin,2003,Gallbladder,EAR_GALLBLADDER,ear,map,이침 경혈 표준화
+9,Jin,2003,Spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+9,Jin,2003,Stomach,EAR_STOMACH,ear,map,이침 경혈 표준화
+9,Jin,2003,Heart,EAR_HEART,ear,map,이침 경혈 표준화
+9,Jin,2003,Kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+10,Kaiser-Pagliarini,2009,경혈 명시X,,unknown,drop,특정 경혈로 식별 불가
+11,Kim,2004,HT7,HT7,body,keep,표준 체침 경혈 코드
+11,Kim,2004,PC6,PC6,body,keep,표준 체침 경혈 코드
+12,Lai,2010,KI6,KI6,body,keep,표준 체침 경혈 코드
+12,Lai,2010,BL62,BL62,body,keep,표준 체침 경혈 코드
+12,Lai,2010,HT7,HT7,body,keep,표준 체침 경혈 코드
+12,Lai,2010,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+12,Lai,2010,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+12,Lai,2010,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+12,Lai,2010,BL15,BL15,body,keep,표준 체침 경혈 코드
+12,Lai,2010,BL20,BL20,body,keep,표준 체침 경혈 코드
+12,Lai,2010,ST36,ST36,body,keep,표준 체침 경혈 코드
+13,Lee,2009,HT7,HT7,body,keep,표준 체침 경혈 코드
+13,Lee,2009,PC6,PC6,body,keep,표준 체침 경혈 코드
+15,Lin,2007,(Ear) Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+15,Lin,2007,Endocrine,EAR_ENDOCRINE,ear,map,이침 경혈 표준화
+15,Lin,2007,Heart,EAR_HEART,ear,map,이침 경혈 표준화
+15,Lin,2007,Small Intestine,EAR_SMALL_INTESTINE,ear,map,이침 경혈 표준화
+15,Lin,2007,Liver,EAR_LIVER,ear,map,이침 경혈 표준화
+15,Lin,2007,Kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+15,Lin,2007,Gallbladder,EAR_GALLBLADDER,ear,map,이침 경혈 표준화
+15,Lin,2007,Spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+15,Lin,2007,Large Intestine,EAR_LARGE_INTESTINE,ear,map,이침 경혈 표준화
+15,Lin,2007,Sanjiao,EAR_SANJIAO,ear,map,이침 경혈 표준화
+16,Liu,2001,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+16,Liu,2001,KI6,KI6,body,keep,표준 체침 경혈 코드
+16,Liu,2001,HT7,HT7,body,keep,표준 체침 경혈 코드
+16,Liu,2001,EX-HN5,EX-HN5,body,keep,표준 체침 경혈 코드
+16,Liu,2001,KI3,KI3,body,keep,표준 체침 경혈 코드
+16,Liu,2001,ST36,ST36,body,keep,표준 체침 경혈 코드
+16,Liu,2001,LR3,LR3,body,keep,표준 체침 경혈 코드
+16,Liu,2001,CV12,CV12,body,keep,표준 체침 경혈 코드
+16,Liu,2001,ST21,ST21,body,keep,표준 체침 경혈 코드
+17,Lu,1998,PC6(bilaterally),PC6,body,map,체침 경혈 코드 표준화
+18,Luo,2006,족태양방광경(BL),,unknown,drop,특정 경혈로 식별 불가
+18,Luo,2006,독맥(GV)의 모든 경혈: BL1,,unknown,drop,특정 경혈로 식별 불가
+18,Luo,2006,BL2,BL2,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL3,BL3,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL4,BL4,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL5,BL5,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL6,BL6,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL7,BL7,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL8,BL8,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL9,BL9,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL10,BL10,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL11,BL11,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL12,BL12,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL13,BL13,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL14,BL14,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL15,BL15,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL16,BL16,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL17,BL17,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL18,BL18,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL19,BL19,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL20,BL20,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL21,BL21,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL22,BL22,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL23,BL23,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL24,BL24,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL25,BL25,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL26,BL26,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL27,BL27,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL28,BL28,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL29,BL29,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL30,BL30,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL31,BL31,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL32,BL32,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL33,BL33,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL34,BL34,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL35,BL35,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL36,BL36,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL37,BL37,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL38,BL38,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL39,BL39,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL40,BL40,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL41,BL41,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL42,BL42,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL43,BL43,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL44,BL44,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL45,BL45,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL46,BL46,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL47,BL47,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL48,BL48,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL49,BL49,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL50,BL50,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL51,BL51,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL52,BL52,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL53,BL53,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL54,BL54,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL55,BL55,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL56,BL56,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL57,BL57,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL58,BL58,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL59,BL59,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL60,BL60,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL61,BL61,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL62,BL62,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL63,BL63,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL64,BL64,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL65,BL65,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL66,BL66,body,keep,표준 체침 경혈 코드
+18,Luo,2006,BL67,BL67,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV1,GV1,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV2,GV2,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV3,GV3,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV4,GV4,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV5,GV5,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV6,GV6,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV7,GV7,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV8,GV8,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV9,GV9,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV10,GV10,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV11,GV11,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV12,GV12,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV13,GV13,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV14,GV14,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV15,GV15,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV16,GV16,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV17,GV17,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV18,GV18,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV19,GV19,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV20,GV20,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV21,GV21,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV22,GV22,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV23,GV23,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV24,GV24,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV25,GV25,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV26,GV26,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV27,GV27,body,keep,표준 체침 경혈 코드
+18,Luo,2006,GV28,GV28,body,keep,표준 체침 경혈 코드
+19,Lv,2007,GV24,GV24,body,keep,표준 체침 경혈 코드
+19,Lv,2007,GV20,GV20,body,keep,표준 체침 경혈 코드
+19,Lv,2007,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+19,Lv,2007,PC6,PC6,body,keep,표준 체침 경혈 코드
+19,Lv,2007,HT7,HT7,body,keep,표준 체침 경혈 코드
+19,Lv,2007,ST36,ST36,body,keep,표준 체침 경혈 코드
+19,Lv,2007,SP6,SP6,body,keep,표준 체침 경혈 코드
+19,Lv,2007,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+19,Lv,2007,BL62,BL62,body,keep,표준 체침 경혈 코드
+19,Lv,2007,KI6,KI6,body,keep,표준 체침 경혈 코드
+19,Lv,2007,KI3,KI3,body,keep,표준 체침 경혈 코드
+19,Lv,2007,PC7,PC7,body,keep,표준 체침 경혈 코드
+19,Lv,2007,LI4,LI4,body,keep,표준 체침 경혈 코드
+19,Lv,2007,LR3,LR3,body,keep,표준 체침 경혈 코드
+19,Lv,2007,GB43,GB43,body,keep,표준 체침 경혈 코드
+19,Lv,2007,BL15,BL15,body,keep,표준 체침 경혈 코드
+19,Lv,2007,BL23,BL23,body,keep,표준 체침 경혈 코드
+21,Nordio,2008,HT7(논문에는 H7이라고 되어있음),HT7,body,map,체침 경혈 코드 표준화
+22,Reza,2010,PC6,PC6,body,keep,표준 체침 경혈 코드
+22,Reza,2010,HT7,HT7,body,keep,표준 체침 경혈 코드
+22,Reza,2010,KI1,KI1,body,keep,표준 체침 경혈 코드
+22,Reza,2010,SP6,SP6,body,keep,표준 체침 경혈 코드
+22,Reza,2010,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+23,Sok,2005,(Ear) Zhenjing,EAR_ZHENJING,ear,map,이침 경혈 표준화
+23,Sok,2005,Bailing,,unknown,drop,특정 경혈로 식별 불가
+24,Suen,2002,(Ear) Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+24,Suen,2002,Heart,EAR_HEART,ear,map,이침 경혈 표준화
+24,Suen,2002,Kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+24,Suen,2002,Liver,EAR_LIVER,ear,map,이침 경혈 표준화
+24,Suen,2002,Spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+24,Suen,2002,Occiput,EAR_OCCIPUT,ear,map,이침 경혈 표준화
+24,Suen,2002,Subcortex,EAR_SUBCORTEX,ear,map,이침 경혈 표준화
+27,Tian,2006,GV20,GV20,body,keep,표준 체침 경혈 코드
+27,Tian,2006,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+27,Tian,2006,HT7,HT7,body,keep,표준 체침 경혈 코드
+27,Tian,2006,SP6,SP6,body,keep,표준 체침 경혈 코드
+27,Tian,2006,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+28,Tsay,2003,HT7,HT7,body,keep,표준 체침 경혈 코드
+28,Tsay,2003,KI1,KI1,body,keep,표준 체침 경혈 코드
+28,Tsay,2003,(Ear) Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+29,Tsay,2004,KI1,KI1,body,keep,표준 체침 경혈 코드
+29,Tsay,2004,ST36,ST36,body,keep,표준 체침 경혈 코드
+29,Tsay,2004,GB34,GB34,body,keep,표준 체침 경혈 코드
+29,Tsay,2004,SP6,SP6,body,keep,표준 체침 경혈 코드
+30,Ye,2008,CV12,CV12,body,keep,표준 체침 경혈 코드
+30,Ye,2008,CV10,CV10,body,keep,표준 체침 경혈 코드
+30,Ye,2008,CV6,CV6,body,keep,표준 체침 경혈 코드
+30,Ye,2008,CV4,CV4,body,keep,표준 체침 경혈 코드
+30,Ye,2008,KI17,KI17,body,keep,표준 체침 경혈 코드
+30,Ye,2008,ST24,ST24,body,keep,표준 체침 경혈 코드
+30,Ye,2008,ST31,ST31,body,keep,표준 체침 경혈 코드
+30,Ye,2008,ST30,ST30,body,keep,표준 체침 경혈 코드
+32,Zhao,2010,KI6,KI6,body,keep,표준 체침 경혈 코드
+32,Zhao,2010,BL62,BL62,body,keep,표준 체침 경혈 코드
+33,Zhu,2005,BL23,BL23,body,keep,표준 체침 경혈 코드
+33,Zhu,2005,PC6,PC6,body,keep,표준 체침 경혈 코드
+33,Zhu,2005,HT7,HT7,body,keep,표준 체침 경혈 코드
+33,Zhu,2005,ST36,ST36,body,keep,표준 체침 경혈 코드
+33,Zhu,2005,SP6,SP6,body,keep,표준 체침 경혈 코드
+1,Guo J,2008,GV20,GV20,body,keep,표준 체침 경혈 코드
+1,Guo J,2008,HT7,HT7,body,keep,표준 체침 경혈 코드
+1,Guo J,2008,SP6,SP6,body,keep,표준 체침 경혈 코드
+1,Guo J,2008,GV24,GV24,body,keep,표준 체침 경혈 코드
+1,Guo J,2008,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+2,Guo JW,2013,GV20,GV20,body,keep,표준 체침 경혈 코드
+2,Guo JW,2013,HT7,HT7,body,keep,표준 체침 경혈 코드
+2,Guo JW,2013,SP6,SP6,body,keep,표준 체침 경혈 코드
+2,Guo JW,2013,GV24,GV24,body,keep,표준 체침 경혈 코드
+2,Guo JW,2013,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+3,He FL,2010,GV20,GV20,body,keep,표준 체침 경혈 코드
+3,He FL,2010,HT7,HT7,body,keep,표준 체침 경혈 코드
+3,He FL,2010,SP6,SP6,body,keep,표준 체침 경혈 코드
+3,He FL,2010,BL62,BL62,body,keep,표준 체침 경혈 코드
+3,He FL,2010,KI6,KI6,body,keep,표준 체침 경혈 코드
+3,He FL,2010,KI9,KI9,body,keep,표준 체침 경혈 코드
+3,He FL,2010,PC6,PC6,body,keep,표준 체침 경혈 코드
+3,He FL,2010,GB35,GB35,body,keep,표준 체침 경혈 코드
+3,He FL,2010,Anmian,ANMIAN,body,map,명명된 체침/기혈 표준화
+4,He T,2010,GV20,GV20,body,keep,표준 체침 경혈 코드
+4,He T,2010,HT7,HT7,body,keep,표준 체침 경혈 코드
+4,He T,2010,SP6,SP6,body,keep,표준 체침 경혈 코드
+4,He T,2010,ST36,ST36,body,keep,표준 체침 경혈 코드
+4,He T,2010,PC6,PC6,body,keep,표준 체침 경혈 코드
+4,He T,2010,GB19,GB19,body,keep,표준 체침 경혈 코드
+4,He T,2010,LR3,LR3,body,keep,표준 체침 경혈 코드
+4,He T,2010,GV17,GV17,body,keep,표준 체침 경혈 코드
+5,Lai Y,2011,GV20,GV20,body,keep,표준 체침 경혈 코드
+5,Lai Y,2011,HT7,HT7,body,keep,표준 체침 경혈 코드
+5,Lai Y,2011,SP6,SP6,body,keep,표준 체침 경혈 코드
+5,Lai Y,2011,PC6,PC6,body,keep,표준 체침 경혈 코드
+5,Lai Y,2011,CV4,CV4,body,keep,표준 체침 경혈 코드
+5,Lai Y,2011,CV6,CV6,body,keep,표준 체침 경혈 코드
+5,Lai Y,2011,CV10,CV10,body,keep,표준 체침 경혈 코드
+5,Lai Y,2011,CV12,CV12,body,keep,표준 체침 경혈 코드
+5,Lai Y,2011,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+5,Lai Y,2011,Yintang,YINTANG,body,map,명명된 체침/기혈 표준화
+5,Lai Y,2011,Ear points: heart,EAR_HEART,ear,map,이침 경혈 표준화
+5,Lai Y,2011,kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+5,Lai Y,2011,liver,EAR_LIVER,ear,map,이침 경혈 표준화
+5,Lai Y,2011,shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+5,Lai Y,2011,spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+5,Lai Y,2011,subcortex,EAR_SUBCORTEX,ear,map,이침 경혈 표준화
+5,Lai Y,2011,sympathetic,EAR_SYMPATHETIC,ear,map,이침 경혈 표준화
+6,Li PF,2013,GV20,GV20,body,keep,표준 체침 경혈 코드
+6,Li PF,2013,GV11,GV11,body,keep,표준 체침 경혈 코드
+6,Li PF,2013,GV14,GV14,body,keep,표준 체침 경혈 코드
+6,Li PF,2013,GV16,GV16,body,keep,표준 체침 경혈 코드
+6,Li PF,2013,GV17,GV17,body,keep,표준 체침 경혈 코드
+6,Li PF,2013,GV18,GV18,body,keep,표준 체침 경혈 코드
+6,Li PF,2013,GV24,GV24,body,keep,표준 체침 경혈 코드
+7,Li XY,2010,GV20,GV20,body,keep,표준 체침 경혈 코드
+7,Li XY,2010,HT7,HT7,body,keep,표준 체침 경혈 코드
+7,Li XY,2010,GB20,GB20,body,keep,표준 체침 경혈 코드
+7,Li XY,2010,Anmian,ANMIAN,body,map,명명된 체침/기혈 표준화
+7,Li XY,2010,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+8,Liu JY,2013,SP6,SP6,body,keep,표준 체침 경혈 코드
+8,Liu JY,2013,ST36,ST36,body,keep,표준 체침 경혈 코드
+8,Liu JY,2013,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+8,Liu JY,2013,Taiyang,TAIYANG,body,map,명명된 체침/기혈 표준화
+9,Lu YY,2008,GV20,GV20,body,keep,표준 체침 경혈 코드
+9,Lu YY,2008,HT7,HT7,body,keep,표준 체침 경혈 코드
+9,Lu YY,2008,BL23,BL23,body,keep,표준 체침 경혈 코드
+9,Lu YY,2008,KI3,KI3,body,keep,표준 체침 경혈 코드
+9,Lu YY,2008,PC6,PC6,body,keep,표준 체침 경혈 코드
+9,Lu YY,2008,GV11,GV11,body,keep,표준 체침 경혈 코드
+9,Lu YY,2008,GV16,GV16,body,keep,표준 체침 경혈 코드
+9,Lu YY,2008,GV24,GV24,body,keep,표준 체침 경혈 코드
+10,Luo WZ,2006,GV20,GV20,body,keep,표준 체침 경혈 코드
+10,Luo WZ,2006,HT7,HT7,body,keep,표준 체침 경혈 코드
+10,Luo WZ,2006,LI4,LI4,body,keep,표준 체침 경혈 코드
+10,Luo WZ,2006,LR3. Yintang,LR3,body,split,마침표로 연결된 체침 경혈 분리
+10,Luo WZ,2006,LR3. Yintang,YINTANG,body,split,마침표로 연결된 체침 경혈 분리
+11,Song Q,2007,GV20,GV20,body,keep,표준 체침 경혈 코드
+11,Song Q,2007,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+12,Su D,2011,HT7,HT7,body,keep,표준 체침 경혈 코드
+12,Su D,2011,SP6,SP6,body,keep,표준 체침 경혈 코드
+12,Su D,2011,ST36,ST36,body,keep,표준 체침 경혈 코드
+12,Su D,2011,HT5,HT5,body,keep,표준 체침 경혈 코드
+12,Su D,2011,BL15,BL15,body,keep,표준 체침 경혈 코드
+12,Su D,2011,BL20 or BL15,,unknown,drop,or 표현으로 특정 경혈 확정 불가
+12,Su D,2011,BL19,BL19,body,keep,표준 체침 경혈 코드
+12,Su D,2011,PC7 or KI1,,unknown,drop,or 표현으로 특정 경혈 확정 불가
+12,Su D,2011,KI3,KI3,body,keep,표준 체침 경혈 코드
+12,Su D,2011,LR3,LR3,body,keep,표준 체침 경혈 코드
+13,Su J,2014,HT7,HT7,body,keep,표준 체침 경혈 코드
+13,Su J,2014,SP6,SP6,body,keep,표준 체침 경혈 코드
+13,Su J,2014,ST36,ST36,body,keep,표준 체침 경혈 코드
+13,Su J,2014,BL23,BL23,body,keep,표준 체침 경혈 코드
+13,Su J,2014,BL60,BL60,body,keep,표준 체침 경혈 코드
+13,Su J,2014,BL62,BL62,body,keep,표준 체침 경혈 코드
+13,Su J,2014,KI3,KI3,body,keep,표준 체침 경혈 코드
+13,Su J,2014,KI6,KI6,body,keep,표준 체침 경혈 코드
+13,Su J,2014,PC6,PC6,body,keep,표준 체침 경혈 코드
+13,Su J,2014,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+14,Sun ZY,2010,SP6,SP6,body,keep,표준 체침 경혈 코드
+14,Sun ZY,2010,KI1,KI1,body,keep,표준 체침 경혈 코드
+14,Sun ZY,2010,KI3,KI3,body,keep,표준 체침 경혈 코드
+15,Tan Y,2012,HT7,HT7,body,keep,표준 체침 경혈 코드
+15,Tan Y,2012,SP6,SP6,body,keep,표준 체침 경혈 코드
+15,Tan Y,2012,Anmian,ANMIAN,body,map,명명된 체침/기혈 표준화
+16,Tao HX,2009,SP6,SP6,body,keep,표준 체침 경혈 코드
+16,Tao HX,2009,PC6,PC6,body,keep,표준 체침 경혈 코드
+16,Tao HX,2009,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+16,Tao HX,2009,Taiyang,TAIYANG,body,map,명명된 체침/기혈 표준화
+16,Tao HX,2009,Yintang,YINTANG,body,map,명명된 체침/기혈 표준화
+17,Tu JH,2012,HT7,HT7,body,keep,표준 체침 경혈 코드
+17,Tu JH,2012,ST36,ST36,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,GV20,GV20,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,HT7,HT7,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,SP6,SP6,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,ST25,ST25,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,ST36,ST36,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL15,BL15,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL18,BL18,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL19,BL19,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL20,BL20,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL21,BL21,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL23,BL23,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL24,BL24,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL26,BL26,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL40,BL40,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,BL57,BL57,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,PC6,PC6,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,LR3,LR3,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,GV4,GV4,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,GV14,GV14,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,GV24,GV24,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,CV4,CV4,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,CV6,CV6,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,CV12,CV12,body,keep,표준 체침 경혈 코드
+18,Wang LL,2012,Anmian,ANMIAN,body,map,명명된 체침/기혈 표준화
+19,Xia XF,2012,GV20,GV20,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,BL15,BL15,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,BL23,BL23,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,GV4,GV4,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,GV9,GV9,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,GV10,GV10,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,GV11,GV11,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,GV14,GV14,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,GV16,GV16,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,GV17,GV17,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,GV24,GV24,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,GV26,GV26,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,CV6,CV6,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,CV12,CV12,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,CV14,CV14,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,CV15,CV15,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,CV17,CV17,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,CV24,CV24,body,keep,표준 체침 경혈 코드
+19,Xia XF,2012,Yintang,YINTANG,body,map,명명된 체침/기혈 표준화
+20,Xiong JW,2011,GV20,GV20,body,keep,표준 체침 경혈 코드
+20,Xiong JW,2011,HT7,HT7,body,keep,표준 체침 경혈 코드
+20,Xiong JW,2011,SP6,SP6,body,keep,표준 체침 경혈 코드
+20,Xiong JW,2011,LI10,LI10,body,keep,표준 체침 경혈 코드
+20,Xiong JW,2011,ST36,ST36,body,keep,표준 체침 경혈 코드
+20,Xiong JW,2011,BL2,BL2,body,keep,표준 체침 경혈 코드
+20,Xiong JW,2011,PC6,PC6,body,keep,표준 체침 경혈 코드
+20,Xiong JW,2011,TE17,TE17,body,keep,표준 체침 경혈 코드
+21,Xuan YB,2007,GV20,GV20,body,keep,표준 체침 경혈 코드
+21,Xuan YB,2007,HT7,HT7,body,keep,표준 체침 경혈 코드
+21,Xuan YB,2007,SP6,SP6,body,keep,표준 체침 경혈 코드
+21,Xuan YB,2007,GV24,GV24,body,keep,표준 체침 경혈 코드
+21,Xuan YB,2007,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+22,Yao W,2014,GV20,GV20,body,keep,표준 체침 경혈 코드
+22,Yao W,2014,HT7,HT7,body,keep,표준 체침 경혈 코드
+22,Yao W,2014,SP6,SP6,body,keep,표준 체침 경혈 코드
+22,Yao W,2014,BL62,BL62,body,keep,표준 체침 경혈 코드
+22,Yao W,2014,KI6,KI6,body,keep,표준 체침 경혈 코드
+22,Yao W,2014,PC6,PC6,body,keep,표준 체침 경혈 코드
+22,Yao W,2014,LR3,LR3,body,keep,표준 체침 경혈 코드
+22,Yao W,2014,Anmian,ANMIAN,body,map,명명된 체침/기혈 표준화
+22,Yao W,2014,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+22,Yao W,2014,Taiyang,TAIYANG,body,map,명명된 체침/기혈 표준화
+22,Yao W,2014,Yintang,YINTANG,body,map,명명된 체침/기혈 표준화
+23,Yeung WF,2009,GV20,GV20,body,keep,표준 체침 경혈 코드
+23,Yeung WF,2009,Anmian,ANMIAN,body,map,명명된 체침/기혈 표준화
+23,Yeung WF,2009,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+23,Yeung WF,2009,Yintang,YINTANG,body,map,명명된 체침/기혈 표준화
+23,Yeung WF,2009,Ear points: shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+24,You L,2010,GV20,GV20,body,keep,표준 체침 경혈 코드
+24,You L,2010,HT7,HT7,body,keep,표준 체침 경혈 코드
+24,You L,2010,SP6,SP6,body,keep,표준 체침 경혈 코드
+24,You L,2010,LI10,LI10,body,keep,표준 체침 경혈 코드
+24,You L,2010,ST36,ST36,body,keep,표준 체침 경혈 코드
+24,You L,2010,BL2,BL2,body,keep,표준 체침 경혈 코드
+24,You L,2010,PC6,PC6,body,keep,표준 체침 경혈 코드
+24,You L,2010,TE17,TE17,body,keep,표준 체침 경혈 코드
+24,You L,2010,Ear points: heart,EAR_HEART,ear,map,이침 경혈 표준화
+24,You L,2010,kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+24,You L,2010,shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+24,You L,2010,spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+24,You L,2010,sympathetic,EAR_SYMPATHETIC,ear,map,이침 경혈 표준화
+25,Yu DS,2012,HT7,HT7,body,keep,표준 체침 경혈 코드
+25,Yu DS,2012,BL15,BL15,body,keep,표준 체침 경혈 코드
+25,Yu DS,2012,BL23,BL23,body,keep,표준 체침 경혈 코드
+25,Yu DS,2012,KI1,KI1,body,keep,표준 체침 경혈 코드
+25,Yu DS,2012,KI3,KI3,body,keep,표준 체침 경혈 코드
+25,Yu DS,2012,PC6,PC6,body,keep,표준 체침 경혈 코드
+25,Yu DS,2012,moxa:KI1,KI1,body,map,치료 방식 접두사 제거
+26,Yu F,2010,GV20,GV20,body,keep,표준 체침 경혈 코드
+26,Yu F,2010,HT7,HT7,body,keep,표준 체침 경혈 코드
+26,Yu F,2010,SP6,SP6,body,keep,표준 체침 경혈 코드
+26,Yu F,2010,BL62,BL62,body,keep,표준 체침 경혈 코드
+26,Yu F,2010,KI6,KI6,body,keep,표준 체침 경혈 코드
+26,Yu F,2010,PC6,PC6,body,keep,표준 체침 경혈 코드
+26,Yu F,2010,Anmian,ANMIAN,body,map,명명된 체침/기혈 표준화
+26,Yu F,2010,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+26,Yu F,2010,Yintang,YINTANG,body,map,명명된 체침/기혈 표준화
+26,Yu F,2010,Ear points: heart,EAR_HEART,ear,map,이침 경혈 표준화
+26,Yu F,2010,kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+26,Yu F,2010,liver,EAR_LIVER,ear,map,이침 경혈 표준화
+26,Yu F,2010,shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+26,Yu F,2010,spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+26,Yu F,2010,subcortex,EAR_SUBCORTEX,ear,map,이침 경혈 표준화
+26,Yu F,2010,sympathetic,EAR_SYMPATHETIC,ear,map,이침 경혈 표준화
+27,Zhang HY,2013,GV20,GV20,body,keep,표준 체침 경혈 코드
+27,Zhang HY,2013,HT7,HT7,body,keep,표준 체침 경혈 코드
+27,Zhang HY,2013,PC6,PC6,body,keep,표준 체침 경혈 코드
+27,Zhang HY,2013,Sishencong,SISHENCONG,body,map,명명된 체침/기혈 표준화
+28,Zhu MM,2012,GV20,GV20,body,keep,표준 체침 경혈 코드
+28,Zhu MM,2012,HT7,HT7,body,keep,표준 체침 경혈 코드
+28,Zhu MM,2012,CV4,CV4,body,keep,표준 체침 경혈 코드
+28,Zhu MM,2012,CV6,CV6,body,keep,표준 체침 경혈 코드
+28,Zhu MM,2012,CV10,CV10,body,keep,표준 체침 경혈 코드
+28,Zhu MM,2012,CV12,CV12,body,keep,표준 체침 경혈 코드
+28,Zhu MM,2012,Yintang,YINTANG,body,map,명명된 체침/기혈 표준화
+28,Zhu MM,2012,Ear points: shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+28,Zhu MM,2012,sympathetic,EAR_SYMPATHETIC,ear,map,이침 경혈 표준화
+28,Zhu MM,2012,occiput,EAR_OCCIPUT,ear,map,이침 경혈 표준화
+28,Zhu MM,2012,brain,EAR_BRAIN,ear,map,이침 경혈 표준화
+28,Zhu MM,2012,hypothysis,EAR_HYPOPHYSIS,ear,map,이침 경혈 표준화
+29,Wang YY,2015,GV20,GV20,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,HT7,HT7,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,SP6,SP6,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,PC6,PC6,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,BL13,BL13,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,BL15,BL15,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,BL18,BL18,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,BL20,BL20,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,BL23,BL23,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,BL24,BL24,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,BL26,BL26,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,BL62,BL62,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,Yintang,YINTANG,body,map,명명된 체침/기혈 표준화
+29,Wang YY,2015,ST25,ST25,body,keep,표준 체침 경혈 코드
+29,Wang YY,2015,KI6,KI6,body,keep,표준 체침 경혈 코드
+1,Chung,2015,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+1,Chung,2015,GV20,GV20,body,keep,표준 체침 경혈 코드
+1,Chung,2015,Ear Shenmen(bilateral),EAR_SHENMEN,ear,map,이침 경혈 표준화
+1,Chung,2015,EX-HN1(EX-HN2은 논문 오타인듯),EX-HN1,body,map,논문 오타 주석 제거
+1,Chung,2015,PC6,PC6,body,keep,표준 체침 경혈 코드
+1,Chung,2015,SP6,SP6,body,keep,표준 체침 경혈 코드
+1,Chung,2015,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+2,Chung,2018,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+2,Chung,2018,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+2,Chung,2018,PC6,PC6,body,keep,표준 체침 경혈 코드
+2,Chung,2018,HT7,HT7,body,keep,표준 체침 경혈 코드
+2,Chung,2018,SP6,SP6,body,keep,표준 체침 경혈 코드
+2,Chung,2018,Ear Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+2,Chung,2018,EX-HN3(unilaterally),EX-HN3,body,map,체침 경혈 코드 표준화
+2,Chung,2018,GV20,GV20,body,keep,표준 체침 경혈 코드
+3,Dong,2018,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+3,Dong,2018,GV20,GV20,body,keep,표준 체침 경혈 코드
+3,Dong,2018,DU14,GV14,body,map,체침 경혈 코드 표준화
+4,Fu,2017,BL23(bilateral),BL23,body,map,체침 경혈 코드 표준화
+4,Fu,2017,BL18(bilateral),BL18,body,map,체침 경혈 코드 표준화
+4,Fu,2017,LR14(unilateral),LR14,body,map,체침 경혈 코드 표준화
+4,Fu,2017,GB25(unilateral),GB25,body,map,체침 경혈 코드 표준화
+5,Guo,2017,GV20,GV20,body,keep,표준 체침 경혈 코드
+5,Guo,2017,DU24,GV24,body,map,체침 경혈 코드 표준화
+5,Guo,2017,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+5,Guo,2017,BG13,BG13,body,keep,표준 체침 경혈 코드
+5,Guo,2017,HT7,HT7,body,keep,표준 체침 경혈 코드
+5,Guo,2017,PC6,PC6,body,keep,표준 체침 경혈 코드
+5,Guo,2017,SP6,SP6,body,keep,표준 체침 경혈 코드
+6,Lo,2013,(Ear) Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+6,Lo,2013,Heart,EAR_HEART,ear,map,이침 경혈 표준화
+6,Lo,2013,Kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+6,Lo,2013,Spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+6,Lo,2013,Liver,EAR_LIVER,ear,map,이침 경혈 표준화
+6,Lo,2013,Subcortex,EAR_SUBCORTEX,ear,map,이침 경혈 표준화
+6,Lo,2013,Occiput,EAR_OCCIPUT,ear,map,이침 경혈 표준화
+7,Luo,2017,GV20(bilateral),GV20,body,map,체침 경혈 코드 표준화
+7,Luo,2017,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+7,Luo,2017,LI4,LI4,body,keep,표준 체침 경혈 코드
+7,Luo,2017,LR3,LR3,body,keep,표준 체침 경혈 코드
+7,Luo,2017,HT7,HT7,body,keep,표준 체침 경혈 코드
+7,Luo,2017,SP6,SP6,body,keep,표준 체침 경혈 코드
+7,Luo,2017,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+7,Luo,2017,BL18,BL18,body,keep,표준 체침 경혈 코드
+7,Luo,2017,BL15,BL15,body,keep,표준 체침 경혈 코드
+8,Yeung,2009,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+8,Yeung,2009,GV20,GV20,body,keep,표준 체침 경혈 코드
+8,Yeung,2009,Ear Shenmen(bilateral),EAR_SHENMEN,ear,map,이침 경혈 표준화
+8,Yeung,2009,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+8,Yeung,2009,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+9,Yeung,2011,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+9,Yeung,2011,GV20,GV20,body,keep,표준 체침 경혈 코드
+9,Yeung,2011,Ear Shenmen(bilateral),EAR_SHENMEN,ear,map,이침 경혈 표준화
+9,Yeung,2011,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+9,Yeung,2011,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+10,Yin,2017,GV20,GV20,body,keep,표준 체침 경혈 코드
+10,Yin,2017,GV24,GV24,body,keep,표준 체침 경혈 코드
+10,Yin,2017,GV29,GV29,body,keep,표준 체침 경혈 코드
+10,Yin,2017,EX-HN22(bilateral),EX-HN22,body,map,체침 경혈 코드 표준화
+10,Yin,2017,HT7(bilateral),HT7,body,map,체침 경혈 코드 표준화
+10,Yin,2017,SP6,SP6,body,keep,표준 체침 경혈 코드
+11,Zhang,2019,RN13,CV13,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,RN12,CV12,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,RN10,CV10,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,RN6,CV6,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,ST36(bilateral),ST36,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,ST25(bilateral),ST25,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,PC6(bilateral),PC6,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,EX-HN22(bilateral),EX-HN22,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,PC6(bilateral),PC6,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,HT7(bilateral),HT7,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,LI4(bilateral),LI4,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,ST36(bilateral),ST36,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,KI6(bilateral),KI6,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,BL62(bilateral),BL62,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,LR3(bilateral),LR3,body,map,체침 경혈 코드 표준화
+15,Zou,2015,(Ear) Shenmen(TF4),EAR_SHENMEN,ear,map,이침 경혈 표준화
+15,Zou,2015,Sympathetic autonomic(AH6a),EAR_SYMPATHETIC,ear,map,이침 경혈 표준화
+15,Zou,2015,Subcortex(AT4),EAR_SUBCORTEX,ear,map,이침 경혈 표준화
+15,Zou,2015,Heart(CO15),EAR_HEART,ear,map,이침 경혈 표준화
+15,Zou,2015,Endocrine(CO18),EAR_ENDOCRINE,ear,map,이침 경혈 표준화
