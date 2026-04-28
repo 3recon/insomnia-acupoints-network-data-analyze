@@ -8,7 +8,7 @@ import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 INPUT_FILE = BASE_DIR / "불면증_경혈데이터.xlsx"
-OUTPUT_FILE = BASE_DIR / "preprocessing" / "2012.csv"
+OUTPUT_FILE = BASE_DIR / "data" / "2012.csv"
 SHEET_NAME = "2012_acupuncture_SR"
 EXPECTED_HEADERS = ["No", "First author", "Year", "Treatment", "Acupoint"]
 
