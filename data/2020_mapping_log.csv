@@ -1,0 +1,82 @@
+﻿paper_no,first_author,year,original_acupoint,standard_acupoint,system,action,reason
+1,Chung,2015,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+1,Chung,2015,GV20,GV20,body,keep,표준 체침 경혈 코드
+1,Chung,2015,Ear Shenmen(bilateral),EAR_SHENMEN,ear,map,이침 경혈 표준화
+1,Chung,2015,EX-HN1(EX-HN2은 논문 오타인듯),EX-HN1,body,map,논문 오타 주석 제거
+1,Chung,2015,PC6,PC6,body,keep,표준 체침 경혈 코드
+1,Chung,2015,SP6,SP6,body,keep,표준 체침 경혈 코드
+1,Chung,2015,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+2,Chung,2018,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+2,Chung,2018,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+2,Chung,2018,PC6,PC6,body,keep,표준 체침 경혈 코드
+2,Chung,2018,HT7,HT7,body,keep,표준 체침 경혈 코드
+2,Chung,2018,SP6,SP6,body,keep,표준 체침 경혈 코드
+2,Chung,2018,Ear Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+2,Chung,2018,EX-HN3(unilaterally),EX-HN3,body,map,체침 경혈 코드 표준화
+2,Chung,2018,GV20,GV20,body,keep,표준 체침 경혈 코드
+3,Dong,2018,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+3,Dong,2018,GV20,GV20,body,keep,표준 체침 경혈 코드
+3,Dong,2018,DU14,GV14,body,map,체침 경혈 코드 표준화
+4,Fu,2017,BL23(bilateral),BL23,body,map,체침 경혈 코드 표준화
+4,Fu,2017,BL18(bilateral),BL18,body,map,체침 경혈 코드 표준화
+4,Fu,2017,LR14(unilateral),LR14,body,map,체침 경혈 코드 표준화
+4,Fu,2017,GB25(unilateral),GB25,body,map,체침 경혈 코드 표준화
+5,Guo,2017,GV20,GV20,body,keep,표준 체침 경혈 코드
+5,Guo,2017,DU24,GV24,body,map,체침 경혈 코드 표준화
+5,Guo,2017,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+5,Guo,2017,BG13,BG13,body,keep,표준 체침 경혈 코드
+5,Guo,2017,HT7,HT7,body,keep,표준 체침 경혈 코드
+5,Guo,2017,PC6,PC6,body,keep,표준 체침 경혈 코드
+5,Guo,2017,SP6,SP6,body,keep,표준 체침 경혈 코드
+6,Lo,2013,(Ear) Shenmen,EAR_SHENMEN,ear,map,이침 경혈 표준화
+6,Lo,2013,Heart,EAR_HEART,ear,map,이침 경혈 표준화
+6,Lo,2013,Kidney,EAR_KIDNEY,ear,map,이침 경혈 표준화
+6,Lo,2013,Spleen,EAR_SPLEEN,ear,map,이침 경혈 표준화
+6,Lo,2013,Liver,EAR_LIVER,ear,map,이침 경혈 표준화
+6,Lo,2013,Subcortex,EAR_SUBCORTEX,ear,map,이침 경혈 표준화
+6,Lo,2013,Occiput,EAR_OCCIPUT,ear,map,이침 경혈 표준화
+7,Luo,2017,GV20(bilateral),GV20,body,map,체침 경혈 코드 표준화
+7,Luo,2017,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+7,Luo,2017,LI4,LI4,body,keep,표준 체침 경혈 코드
+7,Luo,2017,LR3,LR3,body,keep,표준 체침 경혈 코드
+7,Luo,2017,HT7,HT7,body,keep,표준 체침 경혈 코드
+7,Luo,2017,SP6,SP6,body,keep,표준 체침 경혈 코드
+7,Luo,2017,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+7,Luo,2017,BL18,BL18,body,keep,표준 체침 경혈 코드
+7,Luo,2017,BL15,BL15,body,keep,표준 체침 경혈 코드
+8,Yeung,2009,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+8,Yeung,2009,GV20,GV20,body,keep,표준 체침 경혈 코드
+8,Yeung,2009,Ear Shenmen(bilateral),EAR_SHENMEN,ear,map,이침 경혈 표준화
+8,Yeung,2009,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+8,Yeung,2009,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+9,Yeung,2011,EX-HN3,EX-HN3,body,keep,표준 체침 경혈 코드
+9,Yeung,2011,GV20,GV20,body,keep,표준 체침 경혈 코드
+9,Yeung,2011,Ear Shenmen(bilateral),EAR_SHENMEN,ear,map,이침 경혈 표준화
+9,Yeung,2011,EX-HN1,EX-HN1,body,keep,표준 체침 경혈 코드
+9,Yeung,2011,EX-HN22,EX-HN22,body,keep,표준 체침 경혈 코드
+10,Yin,2017,GV20,GV20,body,keep,표준 체침 경혈 코드
+10,Yin,2017,GV24,GV24,body,keep,표준 체침 경혈 코드
+10,Yin,2017,GV29,GV29,body,keep,표준 체침 경혈 코드
+10,Yin,2017,EX-HN22(bilateral),EX-HN22,body,map,체침 경혈 코드 표준화
+10,Yin,2017,HT7(bilateral),HT7,body,map,체침 경혈 코드 표준화
+10,Yin,2017,SP6,SP6,body,keep,표준 체침 경혈 코드
+11,Zhang,2019,RN13,CV13,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,RN12,CV12,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,RN10,CV10,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,RN6,CV6,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,ST36(bilateral),ST36,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,ST25(bilateral),ST25,body,map,체침 경혈 코드 표준화
+11,Zhang,2019,PC6(bilateral),PC6,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,EX-HN22(bilateral),EX-HN22,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,PC6(bilateral),PC6,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,HT7(bilateral),HT7,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,LI4(bilateral),LI4,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,ST36(bilateral),ST36,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,KI6(bilateral),KI6,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,BL62(bilateral),BL62,body,map,체침 경혈 코드 표준화
+12,Zhang,2020,LR3(bilateral),LR3,body,map,체침 경혈 코드 표준화
+15,Zou,2015,(Ear) Shenmen(TF4),EAR_SHENMEN,ear,map,이침 경혈 표준화
+15,Zou,2015,Sympathetic autonomic(AH6a),EAR_SYMPATHETIC,ear,map,이침 경혈 표준화
+15,Zou,2015,Subcortex(AT4),EAR_SUBCORTEX,ear,map,이침 경혈 표준화
+15,Zou,2015,Heart(CO15),EAR_HEART,ear,map,이침 경혈 표준화
+15,Zou,2015,Endocrine(CO18),EAR_ENDOCRINE,ear,map,이침 경혈 표준화
