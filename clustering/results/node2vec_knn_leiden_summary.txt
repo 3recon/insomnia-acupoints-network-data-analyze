@@ -1,0 +1,13 @@
+Node2Vec 16차원 k-NN Leiden 요약
+
+- 임베딩 차원: 16
+- k-NN 이웃 수: 6
+- Leiden resolution: 0.70
+- 클러스터 수: 4
+- modularity: 0.582581
+- 제외된 고립 노드: EAR_ZHENJING
+
+- 0번 클러스터: 노드 87개, 대표 경혈 GV14(5), GV11(4), GV16(4), GV17(4), BL19(3)
+- 1번 클러스터: 노드 39개, 대표 경혈 HT7(42), GV20(36), SP6(30), PC6(26), ST36(16)
+- 2번 클러스터: 노드 21개, 대표 경혈 EAR_SHENMEN(17), EAR_HEART(10), EAR_KIDNEY(9), EAR_SPLEEN(9), EAR_LIVER(8)
+- 3번 클러스터: 노드 15개, 대표 경혈 YINTANG(9), CV12(8), CV6(6), CV4(5), CV10(4)
