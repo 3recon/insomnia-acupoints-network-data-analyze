@@ -22,6 +22,7 @@ EMBEDDING_CSV_OUTPUT = OUTPUT_DIR / "node2vec_embedding_2d.csv"
 SCATTER_SVG_OUTPUT = OUTPUT_DIR / "node2vec_scatter_2d.svg"
 UNWEIGHTED_EMBEDDING_CSV_OUTPUT = OUTPUT_DIR / "node2vec_embedding_2d_unweighted.csv"
 UNWEIGHTED_SCATTER_SVG_OUTPUT = OUTPUT_DIR / "node2vec_scatter_2d_unweighted.svg"
+HT7_SIMILARITY_OUTPUT = OUTPUT_DIR / "ht7_top5_similarity_weighted.txt"
 
 RANDOM_SEED = 42
 EMBEDDING_DIMENSIONS = 2
@@ -342,6 +343,76 @@ def node_radius(frequency: int, max_frequency: int) -> float:
     return 4.0 + 12.0 * math.sqrt(frequency / max_frequency)
 
 
+def cosine_similarity(left: list[float], right: list[float]) -> float:
+    numerator = sum(left[index] * right[index] for index in range(len(left)))
+    left_norm = math.sqrt(sum(value * value for value in left))
+    right_norm = math.sqrt(sum(value * value for value in right))
+    if math.isclose(left_norm, 0.0) or math.isclose(right_norm, 0.0):
+        return 0.0
+    return numerator / (left_norm * right_norm)
+
+
+def read_embedding_csv(path: Path) -> list[EmbeddingRow]:
+    rows: list[EmbeddingRow] = []
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            rows.append(
+                EmbeddingRow(
+                    node=row["node"],
+                    system=row["system"],
+                    frequency=int(row["frequency"]),
+                    x=float(row["x"]),
+                    y=float(row["y"]),
+                )
+            )
+    return rows
+
+
+def top_cosine_similarities(
+    rows: list[EmbeddingRow], target_node: str, top_k: int
+) -> list[tuple[str, float]]:
+    vectors = {row.node: [row.x, row.y] for row in rows}
+    if target_node not in vectors:
+        raise ValueError(f"대상 노드가 임베딩에 없습니다: {target_node}")
+
+    target_vector = vectors[target_node]
+    scores: list[tuple[str, float]] = []
+    for node, vector in vectors.items():
+        if node == target_node:
+            continue
+        scores.append((node, cosine_similarity(target_vector, vector)))
+
+    scores.sort(key=lambda item: (-item[1], item[0]))
+    return scores[:top_k]
+
+
+def build_ht7_similarity_report_text(rows: list[EmbeddingRow]) -> str:
+    top5 = top_cosine_similarities(rows, target_node="HT7", top_k=5)
+    lines = [
+        "HT7와 코사인 유사도가 높은 경혈 상위 5개",
+        "",
+        "- 기준 임베딩: 가중치 반영 Node2Vec 2차원 임베딩",
+        "- 유사도 지표: 코사인 유사도",
+        "",
+    ]
+    for index, (node, score) in enumerate(top5, start=1):
+        lines.append(f"{index}. {node}: 코사인 유사도 {score:.6f}")
+    return "\n".join(lines) + "\n"
+
+
+def generate_ht7_similarity_report(
+    embedding_csv_path: Path,
+    output_dir: Path = OUTPUT_DIR,
+) -> Path:
+    rows = read_embedding_csv(embedding_csv_path)
+    report_text = build_ht7_similarity_report_text(rows)
+    output_dir.mkdir(exist_ok=True)
+    output_path = output_dir / HT7_SIMILARITY_OUTPUT.name
+    output_path.write_text(report_text, encoding="utf-8")
+    return output_path
+
+
 def write_scatter_svg(
     rows: list[EmbeddingRow],
     output_path: Path,
@@ -461,10 +532,12 @@ def build_subtitle(use_edge_weights: bool) -> str:
 def main() -> None:
     weighted_csv_path, weighted_svg_path = generate_embedding_artifacts(use_edge_weights=True)
     unweighted_csv_path, unweighted_svg_path = generate_embedding_artifacts(use_edge_weights=False)
+    similarity_report_path = generate_ht7_similarity_report(weighted_csv_path)
     print(f"가중치 임베딩 CSV 저장: {weighted_csv_path}")
     print(f"가중치 산점도 SVG 저장: {weighted_svg_path}")
     print(f"비가중치 임베딩 CSV 저장: {unweighted_csv_path}")
     print(f"비가중치 산점도 SVG 저장: {unweighted_svg_path}")
+    print(f"HT7 유사도 보고서 저장: {similarity_report_path}")
 
 
 if __name__ == "__main__":

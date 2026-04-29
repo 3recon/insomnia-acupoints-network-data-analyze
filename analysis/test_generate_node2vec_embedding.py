@@ -7,9 +7,11 @@ from analysis.generate_node2vec_embedding import (
     EDGES_INPUT,
     NODES_INPUT,
     build_weighted_adjacency,
+    cosine_similarity,
     read_edges,
     read_nodes,
     generate_embedding_artifacts,
+    generate_ht7_similarity_report,
 )
 
 
@@ -73,6 +75,32 @@ class GenerateNode2VecEmbeddingTest(unittest.TestCase):
         self.assertEqual(27.0, weighted["GV20"]["HT7"])
         self.assertEqual(1.0, unweighted["GV20"]["HT7"])
         self.assertEqual(1.0, unweighted["GV20"]["GV24"])
+
+    def test_generates_weighted_ht7_similarity_report(self):
+        with tempfile.TemporaryDirectory() as temp_dir:
+            output_dir = Path(temp_dir)
+            csv_path, _ = generate_embedding_artifacts(
+                nodes_path=NODES_INPUT,
+                edges_path=EDGES_INPUT,
+                output_dir=output_dir,
+                use_edge_weights=True,
+            )
+
+            report_path = generate_ht7_similarity_report(
+                embedding_csv_path=csv_path,
+                output_dir=output_dir,
+            )
+
+            self.assertTrue(report_path.exists())
+            text = report_path.read_text(encoding="utf-8")
+            self.assertIn("HT7와 코사인 유사도가 높은 경혈 상위 5개", text)
+            self.assertIn("1.", text)
+            self.assertIn("코사인 유사도", text)
+            self.assertNotIn("HT7: ", text)
+
+    def test_cosine_similarity_returns_expected_value(self):
+        self.assertAlmostEqual(1.0, cosine_similarity([1.0, 0.0], [2.0, 0.0]))
+        self.assertAlmostEqual(0.0, cosine_similarity([1.0, 0.0], [0.0, 3.0]))
 
 
 if __name__ == "__main__":
