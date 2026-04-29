@@ -1,0 +1,143 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+  <style>
+    .title { font: 700 34px 'Malgun Gothic', sans-serif; fill: #111827; }
+    .subtitle { font: 500 18px 'Malgun Gothic', sans-serif; fill: #4b5563; }
+    .panel-title { font: 700 24px 'Malgun Gothic', sans-serif; fill: #1f2937; }
+    .label { font: 600 15px 'Malgun Gothic', sans-serif; fill: #1f2937; }
+    .value { font: 600 14px 'Malgun Gothic', sans-serif; fill: #374151; }
+    .legend { font: 500 16px 'Malgun Gothic', sans-serif; fill: #374151; }
+  </style>
+  <rect width="100%" height="100%" fill="#f8fafc"/>
+  <text class="title" x="50" y="60">연도별 Top 10 경혈 노드</text>
+  <text class="subtitle" x="50" y="95">strength 기준 상위 10개 노드 비교</text>
+  <circle cx="1500" cy="58" r="10" fill="#2563eb" fill-opacity="0.88"/>
+  <text class="legend" x="1520" y="64">body</text>
+  <circle cx="1600" cy="58" r="10" fill="#dc2626" fill-opacity="0.88"/>
+  <text class="legend" x="1620" y="64">ear</text>
+  <rect x="50" y="110" width="500" height="980" rx="18" fill="#ffffff" stroke="#dbe4ee"/>
+  <text class="panel-title" x="70" y="145">2012</text>
+  <text class="label" x="70" y="181.80">1. BL15</text>
+  <rect x="200" y="130.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="130.00" width="243.57" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="451.57" y="181.80">143.0</text>
+  <text class="label" x="70" y="267.80">2. GV20</text>
+  <rect x="200" y="216.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="216.00" width="241.87" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="449.87" y="267.80">142.0</text>
+  <text class="label" x="70" y="353.80">3. GV24</text>
+  <rect x="200" y="302.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="302.00" width="229.95" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="437.95" y="353.80">135.0</text>
+  <text class="label" x="70" y="439.80">4. BL23</text>
+  <rect x="200" y="388.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="388.00" width="226.54" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="434.54" y="439.80">133.0</text>
+  <text class="label" x="70" y="525.80">5. BL20</text>
+  <rect x="200" y="474.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="474.00" width="206.10" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="414.10" y="525.80">121.0</text>
+  <text class="label" x="70" y="611.80">6. BL62</text>
+  <rect x="200" y="560.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="560.00" width="200.99" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="408.99" y="611.80">118.0</text>
+  <text class="label" x="70" y="697.80">7. BL18</text>
+  <rect x="200" y="646.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="646.00" width="192.47" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="400.47" y="697.80">113.0</text>
+  <text class="label" x="70" y="783.80">8. BL21</text>
+  <rect x="200" y="732.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="732.00" width="177.14" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="385.14" y="783.80">104.0</text>
+  <text class="label" x="70" y="869.80">9. BL10</text>
+  <rect x="200" y="818.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="818.00" width="158.41" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="366.41" y="869.80">93.0</text>
+  <text class="label" x="70" y="955.80">10. BL11</text>
+  <rect x="200" y="904.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="200" y="904.00" width="158.41" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="366.41" y="955.80">93.0</text>
+  <rect x="590" y="110" width="500" height="980" rx="18" fill="#ffffff" stroke="#dbe4ee"/>
+  <text class="panel-title" x="610" y="145">2016</text>
+  <text class="label" x="610" y="181.80">1. GV20</text>
+  <rect x="740" y="130.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="130.00" width="310.00" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1058.00" y="181.80">182.0</text>
+  <text class="label" x="610" y="267.80">2. HT7</text>
+  <rect x="740" y="216.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="216.00" width="301.48" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1049.48" y="267.80">177.0</text>
+  <text class="label" x="610" y="353.80">3. SP6</text>
+  <rect x="740" y="302.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="302.00" width="257.20" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1005.20" y="353.80">151.0</text>
+  <text class="label" x="610" y="439.80">4. PC6</text>
+  <rect x="740" y="388.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="388.00" width="238.46" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="986.46" y="439.80">140.0</text>
+  <text class="label" x="610" y="525.80">5. YINTANG</text>
+  <rect x="740" y="474.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="474.00" width="163.52" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="911.52" y="525.80">96.0</text>
+  <text class="label" x="610" y="611.80">6. SISHENCONG</text>
+  <rect x="740" y="560.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="560.00" width="137.97" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="885.97" y="611.80">81.0</text>
+  <text class="label" x="610" y="697.80">7. BL23</text>
+  <rect x="740" y="646.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="646.00" width="129.45" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="877.45" y="697.80">76.0</text>
+  <text class="label" x="610" y="783.80">8. ST36</text>
+  <rect x="740" y="732.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="732.00" width="117.53" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="865.53" y="783.80">69.0</text>
+  <text class="label" x="610" y="869.80">9. CV12</text>
+  <rect x="740" y="818.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="818.00" width="115.82" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="863.82" y="869.80">68.0</text>
+  <text class="label" x="610" y="955.80">10. CV6</text>
+  <rect x="740" y="904.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="740" y="904.00" width="115.82" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="863.82" y="955.80">68.0</text>
+  <rect x="1130" y="110" width="500" height="980" rx="18" fill="#ffffff" stroke="#dbe4ee"/>
+  <text class="panel-title" x="1150" y="145">2020</text>
+  <text class="label" x="1150" y="181.80">1. GV20</text>
+  <rect x="1280" y="130.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="130.00" width="71.54" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1359.54" y="181.80">42.0</text>
+  <text class="label" x="1150" y="267.80">2. EX-HN22</text>
+  <rect x="1280" y="216.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="216.00" width="69.84" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1357.84" y="267.80">41.0</text>
+  <text class="label" x="1150" y="353.80">3. HT7</text>
+  <rect x="1280" y="302.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="302.00" width="56.21" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1344.21" y="353.80">33.0</text>
+  <text class="label" x="1150" y="439.80">4. PC6</text>
+  <rect x="1280" y="388.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="388.00" width="54.51" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1342.51" y="439.80">32.0</text>
+  <text class="label" x="1150" y="525.80">5. SP6</text>
+  <rect x="1280" y="474.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="474.00" width="54.51" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1342.51" y="525.80">32.0</text>
+  <text class="label" x="1150" y="611.80">6. EAR_SHENMEN</text>
+  <rect x="1280" y="560.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="560.00" width="52.80" height="74.00" fill="#dc2626" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1340.80" y="611.80">31.0</text>
+  <text class="label" x="1150" y="697.80">7. EX-HN3</text>
+  <rect x="1280" y="646.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="646.00" width="52.80" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1340.80" y="697.80">31.0</text>
+  <text class="label" x="1150" y="783.80">8. EX-HN1</text>
+  <rect x="1280" y="732.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="732.00" width="45.99" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1333.99" y="783.80">27.0</text>
+  <text class="label" x="1150" y="869.80">9. LI4</text>
+  <rect x="1280" y="818.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="818.00" width="25.55" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1313.55" y="869.80">15.0</text>
+  <text class="label" x="1150" y="955.80">10. LR3</text>
+  <rect x="1280" y="904.00" width="310.00" height="74.00" fill="#e5e7eb" rx="6"/>
+  <rect x="1280" y="904.00" width="25.55" height="74.00" fill="#2563eb" fill-opacity="0.88" rx="6"/>
+  <text class="value" x="1313.55" y="955.80">15.0</text>
+</svg>
