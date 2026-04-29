@@ -3,7 +3,9 @@ from __future__ import annotations
 import csv
 import math
 import random
+from collections import deque
 from dataclasses import dataclass
+from heapq import heappop, heappush
 from pathlib import Path
 from typing import Iterable
 
@@ -314,11 +316,295 @@ def write_full_svg(nodes: dict[str, Node], edges: list[Edge], output_path: Path)
     output_path.write_text("\n".join(lines), encoding="utf-8")
 
 
+def rank_top_items(values: dict[str, float], count: int = 5) -> list[tuple[str, float]]:
+    return sorted(values.items(), key=lambda item: (-item[1], item[0]))[:count]
+
+
+def build_unweighted_adjacency(
+    nodes: dict[str, Node], edges: list[Edge]
+) -> dict[str, set[str]]:
+    adjacency = {name: set() for name in nodes}
+    for edge in edges:
+        adjacency[edge.source].add(edge.target)
+        adjacency[edge.target].add(edge.source)
+    return adjacency
+
+
+def build_weighted_adjacency(
+    nodes: dict[str, Node], edges: list[Edge]
+) -> dict[str, dict[str, float]]:
+    adjacency = {name: {} for name in nodes}
+    for edge in edges:
+        adjacency[edge.source][edge.target] = float(edge.weight)
+        adjacency[edge.target][edge.source] = float(edge.weight)
+    return adjacency
+
+
+def compute_degree_centrality(adjacency: dict[str, set[str]]) -> dict[str, float]:
+    node_count = len(adjacency)
+    if node_count <= 1:
+        return {name: 0.0 for name in adjacency}
+    return {
+        name: len(neighbors) / (node_count - 1)
+        for name, neighbors in adjacency.items()
+    }
+
+
+def compute_unweighted_closeness(adjacency: dict[str, set[str]]) -> dict[str, float]:
+    node_count = len(adjacency)
+    closeness: dict[str, float] = {}
+
+    for start in adjacency:
+        distances = {start: 0}
+        queue = deque([start])
+        while queue:
+            current = queue.popleft()
+            for neighbor in adjacency[current]:
+                if neighbor not in distances:
+                    distances[neighbor] = distances[current] + 1
+                    queue.append(neighbor)
+
+        total_distance = sum(distances.values())
+        reachable = len(distances)
+        if total_distance > 0.0 and node_count > 1:
+            score = (reachable - 1.0) / total_distance
+            score *= (reachable - 1.0) / (node_count - 1.0)
+        else:
+            score = 0.0
+        closeness[start] = score
+
+    return closeness
+
+
+def compute_unweighted_betweenness(adjacency: dict[str, set[str]]) -> dict[str, float]:
+    nodes = sorted(adjacency)
+    node_count = len(nodes)
+    betweenness = dict.fromkeys(nodes, 0.0)
+
+    for start in nodes:
+        stack: list[str] = []
+        predecessors = {node: [] for node in nodes}
+        path_counts = dict.fromkeys(nodes, 0.0)
+        path_counts[start] = 1.0
+        distances = dict.fromkeys(nodes, -1)
+        distances[start] = 0
+        queue = deque([start])
+
+        while queue:
+            current = queue.popleft()
+            stack.append(current)
+            for neighbor in adjacency[current]:
+                if distances[neighbor] < 0:
+                    queue.append(neighbor)
+                    distances[neighbor] = distances[current] + 1
+                if distances[neighbor] == distances[current] + 1:
+                    path_counts[neighbor] += path_counts[current]
+                    predecessors[neighbor].append(current)
+
+        dependency = dict.fromkeys(nodes, 0.0)
+        while stack:
+            current = stack.pop()
+            for predecessor in predecessors[current]:
+                dependency[predecessor] += (
+                    path_counts[predecessor] / path_counts[current]
+                ) * (1.0 + dependency[current])
+            if current != start:
+                betweenness[current] += dependency[current]
+
+    if node_count <= 2:
+        return betweenness
+
+    scale = 1.0 / ((node_count - 1) * (node_count - 2) / 2)
+    for node in betweenness:
+        betweenness[node] *= 0.5 * scale
+    return betweenness
+
+
+def compute_strength(weighted_adjacency: dict[str, dict[str, float]]) -> dict[str, float]:
+    return {
+        name: sum(neighbors.values()) for name, neighbors in weighted_adjacency.items()
+    }
+
+
+def compute_weighted_closeness(
+    weighted_adjacency: dict[str, dict[str, float]]
+) -> dict[str, float]:
+    node_count = len(weighted_adjacency)
+    closeness: dict[str, float] = {}
+
+    for start in weighted_adjacency:
+        distances = {start: 0.0}
+        heap: list[tuple[float, str]] = [(0.0, start)]
+        while heap:
+            distance, current = heappop(heap)
+            if distance > distances[current]:
+                continue
+            for neighbor, weight in weighted_adjacency[current].items():
+                next_distance = distance + (1.0 / weight)
+                if neighbor not in distances or next_distance < distances[neighbor]:
+                    distances[neighbor] = next_distance
+                    heappush(heap, (next_distance, neighbor))
+
+        total_distance = sum(distances.values())
+        reachable = len(distances)
+        if total_distance > 0.0 and node_count > 1:
+            score = (reachable - 1.0) / total_distance
+            score *= (reachable - 1.0) / (node_count - 1.0)
+        else:
+            score = 0.0
+        closeness[start] = score
+
+    return closeness
+
+
+def compute_weighted_betweenness(
+    weighted_adjacency: dict[str, dict[str, float]]
+) -> dict[str, float]:
+    nodes = sorted(weighted_adjacency)
+    node_count = len(nodes)
+    betweenness = dict.fromkeys(nodes, 0.0)
+
+    for start in nodes:
+        stack: list[str] = []
+        predecessors = {node: [] for node in nodes}
+        path_counts = dict.fromkeys(nodes, 0.0)
+        path_counts[start] = 1.0
+        distances = dict.fromkeys(nodes, float("inf"))
+        distances[start] = 0.0
+        heap: list[tuple[float, str]] = [(0.0, start)]
+
+        while heap:
+            current_distance, current = heappop(heap)
+            if current_distance > distances[current]:
+                continue
+            stack.append(current)
+            for neighbor, weight in weighted_adjacency[current].items():
+                next_distance = distances[current] + (1.0 / weight)
+                if next_distance < distances[neighbor] - 1e-12:
+                    distances[neighbor] = next_distance
+                    heappush(heap, (next_distance, neighbor))
+                    path_counts[neighbor] = path_counts[current]
+                    predecessors[neighbor] = [current]
+                elif abs(next_distance - distances[neighbor]) <= 1e-12:
+                    path_counts[neighbor] += path_counts[current]
+                    predecessors[neighbor].append(current)
+
+        dependency = dict.fromkeys(nodes, 0.0)
+        while stack:
+            current = stack.pop()
+            for predecessor in predecessors[current]:
+                dependency[predecessor] += (
+                    path_counts[predecessor] / path_counts[current]
+                ) * (1.0 + dependency[current])
+            if current != start:
+                betweenness[current] += dependency[current]
+
+    if node_count <= 2:
+        return betweenness
+
+    scale = 1.0 / ((node_count - 1) * (node_count - 2) / 2)
+    for node in betweenness:
+        betweenness[node] *= 0.5 * scale
+    return betweenness
+
+
+def compute_centrality_rankings(
+    nodes: dict[str, Node], edges: list[Edge]
+) -> dict[str, list[tuple[str, float]]]:
+    unweighted_adjacency = build_unweighted_adjacency(nodes, edges)
+    weighted_adjacency = build_weighted_adjacency(nodes, edges)
+
+    return {
+        "degree_top5": rank_top_items(compute_degree_centrality(unweighted_adjacency)),
+        "betweenness_top5": rank_top_items(
+            compute_unweighted_betweenness(unweighted_adjacency)
+        ),
+        "closeness_top5": rank_top_items(
+            compute_unweighted_closeness(unweighted_adjacency)
+        ),
+        "strength_top5": rank_top_items(compute_strength(weighted_adjacency)),
+        "weighted_betweenness_top5": rank_top_items(
+            compute_weighted_betweenness(weighted_adjacency)
+        ),
+        "weighted_closeness_top5": rank_top_items(
+            compute_weighted_closeness(weighted_adjacency)
+        ),
+    }
+
+
 def build_summary(nodes: dict[str, Node], edges: list[Edge]) -> str:
     top_node_rows = sorted(nodes.values(), key=lambda item: (-item.frequency, item.name))[:10]
     top_edge_rows = sorted(edges, key=lambda item: (-item.weight, item.source, item.target))[:10]
     ear_count = sum(1 for node in nodes.values() if node.system == "ear")
     body_count = sum(1 for node in nodes.values() if node.system == "body")
+    adjacency: dict[str, set[str]] = {name: set() for name in nodes}
+    for edge in edges:
+        adjacency[edge.source].add(edge.target)
+        adjacency[edge.target].add(edge.source)
+
+    edge_count = len(edges)
+    node_count = len(nodes)
+    possible_edges = node_count * (node_count - 1) / 2
+    density = edge_count / possible_edges if possible_edges else 0.0
+
+    components: list[list[str]] = []
+    visited: set[str] = set()
+    for node_name in nodes:
+        if node_name in visited:
+            continue
+        queue = deque([node_name])
+        visited.add(node_name)
+        component: list[str] = []
+        while queue:
+            current = queue.popleft()
+            component.append(current)
+            for neighbor in adjacency[current]:
+                if neighbor not in visited:
+                    visited.add(neighbor)
+                    queue.append(neighbor)
+        components.append(component)
+
+    components.sort(key=len, reverse=True)
+    largest_component = components[0] if components else []
+    largest_component_set = set(largest_component)
+
+    total_distance = 0
+    distance_pairs = 0
+    for start in largest_component:
+        distances = {start: 0}
+        queue = deque([start])
+        while queue:
+            current = queue.popleft()
+            for neighbor in adjacency[current]:
+                if neighbor in largest_component_set and neighbor not in distances:
+                    distances[neighbor] = distances[current] + 1
+                    queue.append(neighbor)
+
+        for target, distance in distances.items():
+            if target != start:
+                total_distance += distance
+                distance_pairs += 1
+
+    average_shortest_path = total_distance / distance_pairs if distance_pairs else 0.0
+
+    bottom_cluster_nodes = [
+        "GV20",
+        "GV24",
+        "SP6",
+        "PC6",
+        "ST36",
+        "BL15",
+        "BL23",
+        "BL62",
+        "KI6",
+        "LR3",
+        "EX-HN1",
+        "EX-HN22",
+        "YINTANG",
+        "ANMIAN",
+    ]
+    isolated_nodes = [component[0] for component in components if len(component) == 1]
+    centrality_rankings = compute_centrality_rankings(nodes, edges)
 
     lines = [
         "\ubd88\uba74\uc99d \uacbd\ud608 \ub124\ud2b8\uc6cc\ud06c \uc694\uc57d",
@@ -328,6 +614,11 @@ def build_summary(nodes: dict[str, Node], edges: list[Edge]) -> str:
         f"- \uccb4\uce68 \ub178\ub4dc \uc218: {body_count}",
         f"- \uc774\uce68 \ub178\ub4dc \uc218: {ear_count}",
         f"- \ucd5c\ub300 \uc5e3\uc9c0 \uac00\uc911\uce58: {max(edge.weight for edge in edges)}",
+        f"- \ubc00\ub3c4(density): {density:.6f}",
+        f"- \uc5f0\uacb0 \uc131\ubd84 \uc218: {len(components)}",
+        f"- \ucd5c\ub300 \uc5f0\uacb0 \uc131\ubd84 \ub178\ub4dc \uc218: {len(largest_component)}",
+        f"- \ud3c9\uade0 \ucd5c\ub2e8 \uacbd\ub85c \uae38\uc774: {average_shortest_path:.6f}",
+        "- \ud3c9\uade0 \ucd5c\ub2e8 \uacbd\ub85c \uae38\uc774 \uae30\uc900: \uc804\uccb4 \uadf8\ub798\ud504\uac00 2\uac1c \uc131\ubd84\uc73c\ub85c \ub098\ub258\uc5b4 \uc788\uc5b4\uc11c, \uac00\uc7a5 \ud070 \uc5f0\uacb0 \uc131\ubd84(162\uac1c \ub178\ub4dc)\uae30\uc900\uc73c\ub85c \uacc4\uc0b0\ud568",
         "",
         "[\uc0c1\uc704 \ube48\ub3c4 \ub178\ub4dc 10\uac1c]",
     ]
@@ -340,6 +631,55 @@ def build_summary(nodes: dict[str, Node], edges: list[Edge]) -> str:
     lines.extend(
         f"- {edge.source} - {edge.target}: {edge.weight}" for edge in top_edge_rows
     )
+    lines.append("")
+    lines.append("[\uc911\uc2ec\uc131 \ube44\uad50: \ube44\uac00\uc911\uce58 \uae30\uc900]")
+    lines.append("- \uc5f0\uacb0 \uc911\uc2ec\uc131 \uc0c1\uc704 5\uac1c")
+    lines.extend(
+        f"  - {name}: {value:.6f}"
+        for name, value in centrality_rankings["degree_top5"]
+    )
+    lines.append("- \ub9e4\uac1c \uc911\uc2ec\uc131 \uc0c1\uc704 5\uac1c")
+    lines.extend(
+        f"  - {name}: {value:.6f}"
+        for name, value in centrality_rankings["betweenness_top5"]
+    )
+    lines.append("- \uadfc\uc811 \uc911\uc2ec\uc131 \uc0c1\uc704 5\uac1c")
+    lines.extend(
+        f"  - {name}: {value:.6f}"
+        for name, value in centrality_rankings["closeness_top5"]
+    )
+    lines.append("")
+    lines.append("[\uc911\uc2ec\uc131 \ube44\uad50: \uac00\uc911\uce58 \uae30\uc900]")
+    lines.append("- \uac00\uc911 \uc5f0\uacb0\uc131(strength) \uc0c1\uc704 5\uac1c")
+    lines.extend(
+        f"  - {name}: {value:.0f}"
+        for name, value in centrality_rankings["strength_top5"]
+    )
+    lines.append("- \uac00\uc911 \ub9e4\uac1c \uc911\uc2ec\uc131 \uc0c1\uc704 5\uac1c")
+    lines.extend(
+        f"  - {name}: {value:.6f}"
+        for name, value in centrality_rankings["weighted_betweenness_top5"]
+    )
+    lines.append("- \uac00\uc911 \uadfc\uc811 \uc911\uc2ec\uc131 \uc0c1\uc704 5\uac1c")
+    lines.extend(
+        f"  - {name}: {value:.6f}"
+        for name, value in centrality_rankings["weighted_closeness_top5"]
+    )
+    lines.append("")
+    lines.append("[\uc804\uccb4 SVG \ud558\ub2e8 \uad70\uc9d1 \ud574\uc11d]")
+    lines.append("- `all_network_full.svg`\uc758 \uc544\ub798\ucabd \ubc30\uce58\ub294 \uc2e4\uc81c \uc704\uacc4\ub098 \ucd95 \uc758\ubbf8\uac00 \uc544\ub2c8\ub77c, \ud798 \uae30\ubc18 \ub124\ud2b8\uc6cc\ud06c \ubc30\uce58 \uacb0\uacfc\uc784")
+    lines.append("- \uc544\ub798\ucabd\uc5d0 \ubab0\ub9b0 \ub178\ub4dc\ub4e4\uc740 \uc8fc\ub85c `GV20`, `GV24`, `SP6`, `PC6`, `ST36`, `BL15`, `BL23`, `BL62`, `KI6`, `LR3`, `EX-HN1`, `EX-HN22`, `YINTANG`, `ANMIAN` \ub4f1 \uccb4\uce68 \uad70\uc9d1\uc784")
+    lines.append("- \uc774 \uad70\uc9d1\uc740 `GV20-SP6(19)`, `PC6-SP6(17)`, `GV20-PC6(16)`, `GV20-GV24(14)` \ucc98\ub7fc \uc11c\ub85c \uac15\ud558\uac8c \uc5f0\uacb0\ub41c \ub178\ub4dc\ub4e4\uc774 \uac00\uae4c\uc774 \ubaa8\uc778 \uac83\uc73c\ub85c \ubcfc \uc218 \uc788\uc74c")
+    if isolated_nodes:
+        lines.append(f"- \uace0\ub9bd \ub178\ub4dc: {', '.join(isolated_nodes)}")
+    lines.append("")
+    lines.append("[\uc2e4\uc2b5 3 \ub124\ud2b8\uc6cc\ud06c\uc640\uc758 \ucc28\uc774]")
+    lines.append("- \uc2e4\uc2b5 3 \ub124\ud2b8\uc6cc\ud06c\ub294 \ub178\ub4dc 71\uac1c, \uc5e3\uc9c0 1,156\uac1c, \ubc00\ub3c4 0.4652, \uc5f0\uacb0 \uc131\ubd84 1\uac1c, \ud3c9\uade0 \ucd5c\ub2e8 \uacbd\ub85c \uae38\uc774 1.5533\uc774\uc5c8\uc74c")
+    lines.append("- \ud604\uc7ac \uacfc\uc81c \ub124\ud2b8\uc6cc\ud06c\ub294 \ub178\ub4dc 163\uac1c, \uc5e3\uc9c0 5,285\uac1c\ub85c \uaddc\ubaa8\ub294 \ub354 \ud06c\uc9c0\ub9cc, \ubc00\ub3c4\ub294 0.400288\ub85c \uc2e4\uc2b5 3\ubcf4\ub2e4 \ub0ae\uc74c")
+    lines.append("- \uc2e4\uc2b5 3\uc740 \uc804\uccb4\uac00 \ud558\ub098\uc758 \uc5f0\uacb0 \uc131\ubd84\uc73c\ub85c \ubd99\uc5b4 \uc788\ub294 \ub354 \uc751\uc9d1\uc801\uc778 \ub124\ud2b8\uc6cc\ud06c\uc600\uace0, \ud604\uc7ac \uacfc\uc81c\ub294 `EAR_ZHENJING` \uace0\ub9bd \ub178\ub4dc\ub97c \ud3ec\ud568\ud574 \uc5f0\uacb0 \uc131\ubd84\uc774 2\uac1c\uc784")
+    lines.append("- \ud3c9\uade0 \ucd5c\ub2e8 \uacbd\ub85c \uae38\uc774\ub3c4 \ud604\uc7ac \uacfc\uc81c\uac00 1.695192\ub85c \uc2e4\uc2b5 3\uc758 1.5533\ubcf4\ub2e4 \uae38\uc5b4, \ub354 \ud070 \uaddc\ubaa8\uc5d0\uc11c \uc0c1\ub300\uc801\uc73c\ub85c \ub35c \uc555\ucd95\ub41c \uad6c\uc870\ub85c \ubcfc \uc218 \uc788\uc74c")
+    lines.append("- \ud5c8\ube0c \uad6c\uc870\ub3c4 \ub2e4\ub978\ub370, \uc2e4\uc2b5 3\uc740 `BL23`, `BL40`, `BL25` \uc911\uc2ec\uc758 \uc694\ud1b5 \uacbd\ud608 \ucf54\uc5b4\uac00 \ub69c\ub837\ud588\uace0, \ud604\uc7ac \uacfc\uc81c\ub294 `HT7`, `GV20`, `SP6`, `PC6` \uc911\uc2ec\uc5d0 `EAR_SHENMEN` \uac19\uc740 \uc774\uce68 \ub178\ub4dc\uae4c\uc9c0 \uc0c1\uc704\uc5d0 \ud3ec\ud568\ub428")
+    lines.append("- \uc989, \uc2e4\uc2b5 3\uc740 \ub2e8\uc77c \uc9c8\ud658 \uc911\uc2ec\uc758 \uc870\ubc00\ud55c \ucf54\uc5b4 \ub124\ud2b8\uc6cc\ud06c\uc5d0 \uac00\uae5d\uace0, \ud604\uc7ac \uacfc\uc81c\ub294 \uccb4\uce68\uacfc \uc774\uce68\uc774 \ud568\uaed8 \uc11e\uc778 \ub354 \ud070 \uaddc\ubaa8\uc758 \ub2e4\uc911 \uad70\uc9d1\ud615 \ub124\ud2b8\uc6cc\ud06c\ub85c \ud574\uc11d\ud560 \uc218 \uc788\uc74c")
 
     return "\n".join(lines) + "\n"
 
